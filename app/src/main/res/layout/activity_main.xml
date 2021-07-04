@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetStart="@dimen/size_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/text.title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/customer_and_product" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/size_68"
+        android:layout_height="@dimen/size_68"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_32"
+        android:background="@color/bg_icon_background"
+        android:scaleType="center"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:tint="@color/ic_tint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCustomerList"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_0"
+        android:layout_marginTop="@dimen/size_0"
+        android:layout_marginEnd="@dimen/size_24"
+        android:insetTop="@dimen/size_0"
+        android:insetBottom="@dimen/size_0"
+        android:text="@string/customer_list"
+        android:textAppearance="@style/text.normal"
+        android:textColor="@color/text_color_black"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/size_0"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        app:iconSize="@dimen/size_12"
+        app:iconTint="@color/text_color_black"
+        app:layout_constraintBottom_toBottomOf="@id/ivUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivUser"
+        app:layout_constraintTop_toTopOf="@id/ivUser"
+        app:strokeColor="@color/bg_icon_background"
+        app:strokeWidth="@dimen/size_1" />
+
+
+    <ImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="@dimen/size_68"
+        android:layout_height="@dimen/size_68"
+        android:layout_marginStart="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_32"
+        android:background="@color/bg_icon_background"
+        android:scaleType="center"
+        android:src="@drawable/ic_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUser"
+        app:tint="@color/ic_tint" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProductList"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/size_0"
+        android:layout_marginTop="@dimen/size_0"
+        android:layout_marginEnd="@dimen/size_24"
+        android:insetTop="@dimen/size_0"
+        android:insetBottom="@dimen/size_0"
+        android:text="@string/product_list"
+        android:textAppearance="@style/text.normal"
+        android:textColor="@color/text_color_black"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/size_0"
+        app:icon="@drawable/ic_arrow_forward"
+        app:iconGravity="end"
+        app:iconSize="@dimen/size_12"
+        app:iconTint="@color/text_color_black"
+        app:layout_constraintBottom_toBottomOf="@id/ivProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivProduct"
+        app:layout_constraintTop_toTopOf="@id/ivProduct"
+        app:strokeColor="@color/bg_icon_background"
+        app:strokeWidth="@dimen/size_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
